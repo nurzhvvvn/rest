@@ -31,36 +31,9 @@ class DatabaseSeeder extends Seeder
             'password' => 'olivia_123',
             'role' => 'moderator'
         ]);
-        Advert::create([
-            'status' => 'Modern Apartment in City Center',
-            'title' => 'Spacious 2-bedroom apartment with great view.',
-            'text' => 'published',
-            'price' => '1200',
-            'category_id' => 1,
-            'user_id' => 1,
-            'photos' => json_encode('[\"advert-1.jpg\",\"advert-2.jpg\"]')
-        ]);
-        Advert::create([
-            'status' => 'Cozy Suburban House',
-            'title' => 'Quiet area, 3 bedrooms, renovated kitchen.',
-            'text' => 'declined',
-            'price' => '980',
-            'category_id' => 1,
-            'user_id' => 2,
-            'photos' => json_encode('[\"advert-1.jpg\",\"advert-2.jpg\",\"advert-3.jpg\"]')
-        ]);
-        Advert::create([
-            'status' => 'Downtown Studio',
-            'title' => 'Perfect for students, fully furnished.',
-            'text' => 'moderation',
-            'price' => '650',
-            'category_id' => 1,
-            'user_id' => 2,
-            'photos' => json_encode('[\"advert-1.jpg\",\"advert-2.jpg\"]')
-        ]);
         Category::create([
-            'name' => 'Real Estate',
-        ]);
+        'name' => 'Real Estate',
+    ]);
         Category::create([
             'name' => 'Vehicles',
         ]);
@@ -88,6 +61,34 @@ class DatabaseSeeder extends Seeder
         Category::create([
             'name' => 'Business & Equipment',
         ]);
+        Advert::create([
+            'status' => 'Modern Apartment in City Center',
+            'title' => 'Spacious 2-bedroom apartment with great view.',
+            'text' => 'published',
+            'price' => '1200',
+            'category_id' => 1,
+            'user_id' => 1,
+            'photos' => json_encode('[\"advert-1.jpg\",\"advert-2.jpg\"]')
+        ]);
+        Advert::create([
+            'status' => 'Cozy Suburban House',
+            'title' => 'Quiet area, 3 bedrooms, renovated kitchen.',
+            'text' => 'declined',
+            'price' => '980',
+            'category_id' => 1,
+            'user_id' => 2,
+            'photos' => json_encode('[\"advert-1.jpg\",\"advert-2.jpg\",\"advert-3.jpg\"]')
+        ]);
+        Advert::create([
+            'status' => 'Downtown Studio',
+            'title' => 'Perfect for students, fully furnished.',
+            'text' => 'moderation',
+            'price' => '650',
+            'category_id' => 1,
+            'user_id' => 2,
+            'photos' => json_encode('[\"advert-1.jpg\",\"advert-2.jpg\"]')
+        ]);
+
         View::create([
             'advert_id' => 2,
             'user_id' => 2,
