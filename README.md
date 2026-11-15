@@ -1,1 +1,1 @@
-# rest
+# Laravel Template
